@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let textView: UITextView = view as! UITextView;
+        //textView.isEditable = false;
+        textView.textColor = .blue;
+        textView.font = .systemFont(ofSize: 20);
+
+        textView.text = "\n\n\n";
+        textView.text += "Hello, world!";         //append more text to what's already in textView.text
+        
+        let i: Int = 123;
+        textView.text += "\nThe answer is \(i)."; //append more text to what's already in textView.text
+        
     }
 
 
